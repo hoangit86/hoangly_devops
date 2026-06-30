@@ -51,7 +51,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./small_services
-          file: ./small_services/part_1/Dockerfile
+          file: ./small_services/Dockerfile
           push: true
           platforms: linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
